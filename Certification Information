@@ -1,0 +1,230 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="screen-orientation" content="portrait">
+    <!-- uc强制竖屏 -->
+    <!-- QQ强制竖屏 -->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>证书查询</title>
+    <link rel="stylesheet" href="css/commons.css" />
+    <link rel="stylesheet" href="css/jlyl.css" />
+    <link rel="stylesheet" href="css/shachutanchu.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".shanchu").click(function () {
+                $(".tanchu-ul").show();
+                $(".zzc").show();
+            });
+            $(".zzc").click(function () {
+                $(".tanchu-ul").hide();
+                $(".zzc").hide();
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".shanchuj").click(function () {
+                $(".tanchu-ulj").show();
+                $(".zzcj").show();
+            });
+            $(".zzcj").click(function () {
+                $(".tanchu-ulj").hide();
+                $(".zzcj").hide();
+            });
+        })
+    </script>
+    <style type="text/css">
+        .TitleCss {
+            font-family: 细黑;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .ContentCss {
+            font-family: 细黑;
+            font-size: 12px;
+            text-align: justify;
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <div class="zzc"></div>
+    <!--弹出删除结束  -->
+    <div class="outdiv">
+        <div class="head-top">
+            <!--表头开始  -->
+            <span class="bt">证书查询结果 Result</span>
+            
+            
+        </div>
+        <!--表头结束  -->
+        <div id="PanelCert">
+	
+            <div class="body-conter" style="bottom: 42px; overflow: auto;">
+                <div class="fgx"></div>
+                <div class="jibenxinxi">
+                    <!--联系方式开始  -->
+                    <ul>
+                        <li>
+                            <span class="jb">证书信息 Certification Information
+								
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="zynr">
+                        <li><span class="TitleCss">证书编号<br />
+                            Registration No.</span>
+                            <div class="xm">
+                                <span id="lblRegNum" class="ContentCss">IAS23MD028R2</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">认证状态<br />
+                            Status</span>
+                            <div class="xm">
+                                <span id="lblRegState" class="ContentCss" style="color:Green;font-size:Medium;font-weight:bold;">有效 Active</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span class="TitleCss">
+                                <img src="img/dian.png" />
+                                发证日期 Valid from
+                            </span>
+                            <div style="padding-left: 0.5em;" class="xm">
+                                <span id="lblRegFromDate" class="ContentCss">2023-08-30</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li style="padding: 0px;">
+                            <img src="img/xian.png" />
+                        </li>
+                        <li style="padding-top: 0px;">
+                            <span class="TitleCss">
+                                <img src="img/dian-huangse.png" />
+                                过期时间 Expiry Date
+                            </span>
+                            <div style="padding-left: 0.5em;" class="xm">
+                                <span id="lblRegExpireDate" class="ContentCss">2026-02-06</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <div class="fgx"></div>
+
+
+                    </ul>
+                </div>
+                <!--联系方式结束  -->
+                <div class="fgx"></div>
+                <div class="jibenxinxi">
+                    <!--求职意向开始  -->
+                    <ul>
+                        <li>
+                            <span class="jb">公司信息 Organization Information
+								
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="zynr">
+                        <li><span class="TitleCss">公司名称</span>
+                            <div class="xm">
+                                <span id="lblCnName" class="ContentCss">上池诊断科技（深圳）有限公司</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">Certificate Holder</span>
+                            <div class="xm">
+                                <div>
+                                    <span id="lblEnName" class="ContentCss">Aehealth Limited</span>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">统一信用代码 </span>
+                            <div class="xm">
+                                <div>
+                                    <span id="lblOrgNum" class="ContentCss">91440300MA5H801R20</span>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">审核地址</span>
+                            <div class="xm">
+                                <div>
+                                    <span id="lblAuditAddressCn" class="ContentCss">中国广东省深圳市坪山区龙田街道老坑社区规划一路贝特瑞科技厂区1栋B1101 & 英国曼彻斯特夏洛特街7号007室（销售场所）</span>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">Audit Address</span>
+                            <div class="xm">
+                                <span id="lblAuditAddressEn" class="ContentCss">Floor 11, Building 1B, BTR Technology Park, Longtian Street, Pingshan District, Shenzhen, P.R. China & 007 Room, 7 Charlotte Street, Manchester, M14DZ United Kingdom (Sales Location)</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">注册地址</span>
+                            <div class="xm">
+                                <span id="lblRegAddressCn" class="ContentCss">中国广东省深圳市坪山区龙田街道老坑社区规划一路贝特瑞科技厂区1栋B1101</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li><span class="TitleCss">Registration Address</span>
+                            <div class="xm">
+                                <span id="lblRegAddressEn" class="ContentCss">Floor 11, Building 1B, BTR Technology Park, Longtian Street, Pingshan District, Shenzhen, P.R. China</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="fgx"></div>
+                <div class="jibenxinxi">
+                    <ul>
+                        <li>
+                            <span class="jb">认证信息 Certification Information
+                            </span>
+                        </li>
+                    </ul>
+
+                    <ul class="zynr">
+
+                        <li><span class="TitleCss">认证标准 Standard</span>
+                            <div class="xm">
+                                <span id="lblStandard" class="ContentCss">ISO13485:2016</span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+
+                        <li>
+                            <span class="TitleCss">认证范围</span>
+                            <div class="xm">
+                                <span id="lblRangeCn" class="ContentCss">资质范围内的体外诊断试剂（免疫荧光试剂，溶血剂，稀释液，清洗液）和体外诊断仪器（荧光免疫分析仪、血细胞分析仪）的生产和出口销售</span></div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span class="TitleCss">Scope</span>
+                            <div class="xm">
+                                <span id="lblRangeEn" class="ContentCss">Manufacture, Export and Sales of In-vitro Diagnostic Reagents (Immunofluorescence Reagents, Lyse Hematology Reagent, Diluent Hematology Reagent, Cleanser ) and In-vitro Diagnostic Instruments (Fluorescence Immunoassay Analyzer, Hematology Analyzers) within the Scope of Qualification</span></div>
+                            <div style="clear: both;"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+</div>
+        
+    </div>
+
+</body>
+</html>
